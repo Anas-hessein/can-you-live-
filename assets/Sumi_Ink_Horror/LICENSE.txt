@@ -1,0 +1,12 @@
+Licence
+-------
+You may use these assets in any number of projects, commercial or not, including games sold
+on any platform, and modify them as you need. You may not redistribute or resell the asset
+files themselves, modified or not, as assets, templates or in any other collection. Credit
+is appreciated but not required.
+
+Origin
+------
+The source drawings were generated with ChatGPT (gpt-image) from the author's prompts and
+references, then cut out, aligned, scaled and assembled into frames, sheets and parts by
+script. Stores that ask for it should have this pack marked as AI-generated content.

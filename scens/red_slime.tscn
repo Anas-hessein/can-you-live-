@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b83y7l58c7eay"]
+
+[ext_resource type="Texture2D" uid="uid://dckr1vey1bd6x" path="res://assets/oubliette_tileset_transparent.png" id="1_y8ugc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb0x4"]
+atlas = ExtResource("1_y8ugc")
+region = Rect2(0, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wilhr"]
+atlas = ExtResource("1_y8ugc")
+region = Rect2(16, 112, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_miugm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hb0x4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wilhr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6a34x"]
+radius = 5.0
+height = 10.0
+
+[node name="red_slime" type="CharacterBody2D" unique_id=1446355682]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1690736597]
+position = Vector2(-1, -4)
+sprite_frames = SubResource("SpriteFrames_miugm")
+frame_progress = 0.40144694
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1044706101]
+shape = SubResource("CapsuleShape2D_6a34x")
